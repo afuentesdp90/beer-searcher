@@ -1,9 +1,7 @@
 <script setup>
+import Searcher from "./components/Searcher.vue";
 </script>
 
-<template>
-  <p class="bg-red-500">PEPE</p>
-</template>
+<template><Searcher /></template>
 
-<style scoped>
-</style>
+<style scoped></style>
