@@ -1,5 +1,5 @@
 <script setup>
-import Searcher from "./components/Searcher.vue";
+import Searcher from "./components/BeerSearcher.vue";
 </script>
 
 <template><Searcher /></template>
