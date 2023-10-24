@@ -21,15 +21,25 @@ const searchBeers = () => {
       v-model="searchTerm"
       @input="searchBeers"
       placeholder="Buscar cervezas por nombre o alimentos"
-      class="p-2 border rounded-md w-full mb-4"
+      class="p-2 m-8 border w-80 rounded-md mb-4"
     />
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    <ul
+      role="list"
+      class="
+        grid grid-cols-1
+        gap-x-4 gap-y-8
+        sm:grid-cols-3 sm:gap-x-6
+        lg:grid-cols-4
+        xl:grid-cols-5 xl:gap-x-8
+        p-8
+      "
+    >
       <BeerItem
         v-for="(beer, idx) in storeBeers.getBeers"
         :key="idx"
         :beer="beer"
       />
-    </div>
+    </ul>
   </div>
 </template>
 
